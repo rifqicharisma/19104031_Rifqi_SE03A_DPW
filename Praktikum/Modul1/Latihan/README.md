@@ -8,3 +8,6 @@
 - tr -> berfungsi untuk membuat baris pada tabel (table row).
 - th -> digunakan untuk mendefinisikan sel header pada tabel.
 - td -> digunakan untuk membuat kolom di dalam baris tabel di HTML sehingga akan membentuk sel (table data).
+
+# Demo
+![image](https://user-images.githubusercontent.com/58881125/137926413-fc7d4602-c829-4d04-b6e2-5f8ded7ca6b8.png)
