@@ -79,6 +79,13 @@
     background-color: #74c0ff;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 5px;
+}
+
+.about:hover{
+  color: white;
 }
 
 .aboutTb{
