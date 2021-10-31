@@ -73,23 +73,59 @@
   background-color: #f44336;
 }
 
-.about{
-    font-family: sans-serif;
-    text-align: center;
-    background-color: #74c0ff;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-    border-radius: 5px;
+.about {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #74c0ff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 5px;
 }
 
-.about:hover{
+.about:hover {
   color: white;
 }
 
-.aboutTb{
-    margin-left: auto;
-    margin-right: auto;
-    font-family: sans-serif;
+.aboutTb {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: sans-serif;
+}
+
+.mySkill{
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #74c0ff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+}
+
+.judul{
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.grid-item{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 0px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-family: sans-serif;
+  text-align: center;
 }
