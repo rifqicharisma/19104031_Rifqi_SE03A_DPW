@@ -1,0 +1,39 @@
+.slideshow1{
+    background-image: url('https://i0.wp.com/ittelkom-pwt.ac.id/wp-content/uploads/2021/08/WhatsApp-Image-2021-08-25-at-18.25.36-rotated.jpeg?fit=1280%2C681&ssl=1');
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 400px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.slideshow2{
+    background-image: url('https://i2.wp.com/ittelkom-pwt.ac.id/wp-content/uploads/2021/06/Webp.net-resizeimage-7.jpg?fit=1690%2C900&ssl=1');
+    min-height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+
+.slideshow3{
+    background-image: url('https://i1.wp.com/ittelkom-pwt.ac.id/wp-content/uploads/2021/06/Webp.net-resizeimage-4.jpg?fit=1690%2C900&ssl=1');
+    min-height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+
+.keunggulan{
+    height: 200px;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+}
+
+.tab{
+    padding-right: 50px;
+}
+
+.tab1{
+    padding-right: 4px;
+}
