@@ -37,3 +37,25 @@
 .tab1{
     padding-right: 4px;
 }
+
+.iconSRC {
+    position: absolute;
+    font-size: 20px;
+    top: 20%;
+    right: 12%;
+    color: white;
+}
+
+.cari {
+    position: relative;
+}
+
+.cari input {
+    background-color: #e25155;
+    border: none;
+    border-radius: 14px;
+}
+
+.cari ::placeholder {
+    color: white;
+}
