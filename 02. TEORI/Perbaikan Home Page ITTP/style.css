@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(https://ittelkom-pwt.ac.id/wp-content/uploads/2021/04/bg.png);
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    background-color: #e5e5e5e5;
+    height: 30px;
+    display: flex;
+    justify-content: end;
+}
+
+.sosmed {
+    display: flex;
+    justify-content: space-evenly;
+    width: 125px;
+    margin-right: 200px;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.sosmed .instagram:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.sosmed .facebook:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.sosmed .youtube:hover {
+    cursor: pointer;
+    color: red;
+}
+
+
+/* hero */
+.hero {
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 40%);
+    border-radius: 25px;
+}
+
+.navbar {
+    border-radius: 25px 25px 0 0;
+    background-color: #db292f;
+}
+
+ul li {
+    font-size: 15px;
+    margin: 0 5px;
+}
+
+.cari {
+    position: relative;
+}
+
+.cari input {
+    background-color: #e25155;
+    border: none;
+    border-radius: 14px;
+}
+
+.cari ::placeholder {
+    color: white;
+}
+
+.iconSRC {
+    position: absolute;
+    font-size: 20px;
+    top: 20%;
+    right: 8%;
+    color: white;
+}
+
+.carousel img {
+    height: 500px;
+    border-radius: 0 0 25px 25px;
+}
+
+.caption-carousel {
+    position: absolute;
+    left: 17%;
+    top: 25%;
+    width: 40%;
+}
+
+.btn {
+    position: absolute;
+    bottom: 20%;
+    left: 17%;
+    background-color: #db292f;
+    border: none;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #ffbf00;
+    border: none;
+    color: white;
+}
+
+.caption-carousel :nth-child(1) {
+    color: red;
+    font-size: 1.9em;
+    font-weight: 700;
+}
+
+.caption-carousel :nth-child(2) {
+    color: black;
+}
+/* Hero */
+
+/* =========== CSS Pestasi dll ============= */
+
+/* Body */
+body {
+    font-family: "Poppins";
+}
+
+
+/* Pembungkus Bagian Beranda */
+.bagian-beranda {
+    padding: 0 20px;
+    margin: 60px 0;
+    width: 100%;
+}
+
+.link-beranda {
+    border-radius: 25px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 -1px 13px 0 rgb(0 0 0 / 48%);
+    min-height: 280px;
+}
+
+
+/* Item Bagian Beranda */
+.link-item {
+    padding: 20px 26px 35px;
+    border-radius: 25px;
+    transition: ease 0.5s;
+    color: #1a1a1a;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    transition: transform .3s;
+    text-decoration: none;
+}
+
+/* Efek Item Bagian Beranda */
+.link-item:hover {
+    background-color: #bd1616;
+    transform: scale(1, 1.28);
+    color: white;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+
+/* Caption Bagian Beranda */
+.link-heading {
+    display: flex;
+    align-items: center;
+    height: 85px;
+}
+
+/* Icon Caption Bagian Beranda */
+.link-heading img {
+    width: auto;
+    height: 45px;
+    margin-right: 10px;
+}
+
+/* Judul Caption Bagian Beranda */
+.link-heading .link-title {
+    font-weight: bold;
+    font-size: 19px;
+}
+
+/* Deskripsi Caption Bagian Beranda */
+.link-content {
+    font-size: 13px;
+    padding-bottom: 35px;
+}
+
+/* Button Caption Bagian Beranda */
+.link-btn {
+    background-color: #db2c32;
+    font-size: 12px;
+    padding: 5px 8px 8px 10px;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 25px;
+    width: fit-content;
+    margin: auto;
+}
+
+/* ============== CSS kenapa harus ittp ================= */
+.title {
+    background-color: lightgray !important;
+    max-height: 65px !important;
+    max-width: fit-content !important;
+    border-left-width: 7px !important;
+    border-left-style: solid !important;
+    border-left-color: red !important;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 25px !important;
+    border-bottom-right-radius: 25px !important;
+    border-bottom-left-radius: 0px !important;
+}
+
+.custom-color-red {
+    background-color: #DB292F;
+}
+
+.border-radius-top {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.border-radius-red {
+    border: 3px solid #DB292F;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.icon-section {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.icon-shadow {
+    box-shadow: 1px -1px 13px 0 rgb(0 0 0 / 48%);
+}
+
+/*============= CSS TV ITTP ==============*/
+.container-fluid-bg {
+    position: absolute;
+    top: 50px;
+    height: fit-content;
+    background-image: url('https://ittelkom-pwt.ac.id/wp-content/uploads/2021/07/bg-merah.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.home-title {
+    border-left: solid 7px#DB292F;
+    background-color: #e0e0e0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 0 15px 15px 0;
+    width: fit-content;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+.h5-font {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.carousel-contain {
+    background-color: black;
+    width: 100%;
+    height: 300px;
+}
+
+.img-top {
+    height: 100px;
+    width: fit-content;
+    margin-right: 20px;
+    margin-left: 20px;
+    object-fit: contain;
+}
+
+.judul-tengah {
+    font-size: 1.7rem;
+    margin: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-bottom: solid 5px#DB292F;
+    text-transform: uppercase;
+    padding: 0 7px 13px;
+}
+
+.border-judul{
+    border-bottom: solid 2px#DB292F;
+}
+
+.section-kerjasama{
+    position: relative;
+    top: 430px;
+}
+
+.owl-prev {
+    left: -60px;
+}
+
+.owl-next{
+    right: -40px;
+}
+
+.owl-prev , .owl-next{
+    position: absolute;
+    top: 30px;
+}
+
+.owl-prev span , .owl-next span {
+    font-size: 80px;
+    color: rgb(109, 86, 86);
+}
+
+.owl-theme, .owl-nav[class*="owl-"]:hover {
+    background: transparent;
+}
+
+.con-frame{
+    width: 350px;
+    height: 225px;
+    margin-bottom: 40px;
+}
