@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        // ancestors
+        $(document).ready(function () {
+            $("span").parent().css({
+                "color": "red",
+                "border": "2px solid red"
+            });
+        });
+
+        // descendants children method
+        $(document).ready(function () {
+            $("div").children().css({
+                "color": "red",
+                "border": "2px solid red"
+            });
+        });
+
+        // siblings method
+        $(document).ready(function () {
+            $("h2").siblings().css({
+                "color": "red",
+                "border": "2px solid red"
+            });
+        });
+
+        // first method
+        $(document).ready(function () {
+            $("div").first().css("background-color", "yellow");
+        });
+
+        // last method
+        $(document).ready(function () {
+            $("div").last().css("background-color", "yellow");
+        });
+
+        // eq method
+        $(document).ready(function () {
+            $("p").eq(1).css("background-color", "yellow");
+        });
+
+        // filter method
+        $(document).ready(function () {
+            $("p").filter(".intro").css("background-color", "yellow");
+        });
+    </script>
+
+    <style>
+        .ancestors * {
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 5px;
+            margin: 15px;
+        }
+
+        .descendants * {
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 5px;
+            margin: 15px;
+        }
+
+        .siblings * {
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ancestors">
+        <div style="width:500px;">div (great-grandparent)
+            <ul>ul (grandparent)
+                <li>li (direct parent)
+                    <span>span</span>
+                </li>
+            </ul>
+        </div>
+
+        <div style="width:500px;">div (grandparent)
+            <p>p (direct parent)
+                <span>span</span>
+            </p>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="descendants" style="width:500px;">div (current element)
+        <p>p (child)
+            <span>span (grandchild)</span>
+        </p>
+        <p>p (child)
+            <span>span (grandchild)</span>
+        </p>
+    </div>
+
+    <br>
+
+    <h1>Welcome to My Homepage</h1>
+    <p>This is a paragraph.</p>
+    <div style="border: 1px solid black;">
+        <p>A paragraph in a div.</p>
+        <p>Another paragraph in a div.</p>
+    </div>
+    <br>
+    <div style="border: 1px solid black;">
+        <p>A paragraph in another div.</p>
+        <p>Another paragraph in another div.</p>
+    </div>
+    <br>
+    <div style="border: 1px solid black;">
+        <p>A paragraph in another div.</p>
+        <p>Another paragraph in another div.</p>
+    </div>
+
+    <br>
+
+    <h1>Welcome to My Homepage</h1>
+    <p>My name is Donald (index 0).</p>
+    <p>Donald Duck (index 1).</p>
+    <p>I live in Duckburg (index 2).</p>
+    <p>My best friend is Mickey (index 3).</p>
+
+    <h1>Welcome to My Homepage</h1>
+    <p>My name is Donald.</p>
+    <p class="intro">I live in Duckburg.</p>
+    <p class="intro">I love Duckburg.</p>
+    <p>My best friend is Mickey.</p>
+</body>
+
+<body class="siblings">
+    <div>div (parent)
+        <p>p</p>
+        <span>span</span>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <p>p</p>
+    </div>
+</body>
+
+</html>
