@@ -1,0 +1,293 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #F9FAFE;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.navbar {
+    background-color: #B7292D;
+}
+
+.skansika {
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+}
+
+.name-skansika {
+    margin-top: 13px;
+    color: white;
+    font-weight: 700;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    color: white;
+}
+
+.navbar-brand {
+    border: 2px solid;
+}
+
+.logo {
+    width: 50px;
+}
+
+.caption-carousel {
+    position: absolute;
+    left: 17%;
+    top: 25%;
+    width: 40%;
+    color: white;
+}
+
+.caption-carousel h3 {
+    font-weight: 700;
+}
+
+p.nama-smk {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+p.desc {
+    text-align: justify;
+}
+
+.btn.hero {
+    background-color: #E82329;
+    border: none;
+    margin-left: 490px;
+}
+
+/* visi misi */
+.seksi-visi-misi {
+    background-color: #E82329;
+    left: 0;
+    right: 0;
+    width: 100%;
+    /* height: 554px; */
+}
+
+.vismis {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.baris-vismis {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.isi-visi {
+    padding-top: 60px;
+}
+
+.isi-vismis {
+    text-align: center;
+    color: white;
+}
+
+.list-isi-vismis {
+    color: white;
+    text-align: justify;
+}
+
+/* visi misi */
+
+
+/* program keahlian */
+
+/* program keahlian */
+
+
+
+/* guru dan karyawan */
+.box-guru-karyawan {
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 25px;
+    border: 2px red solid;
+    padding: 25px;
+    text-align: center;
+}
+
+.box-guru-karyawan:hover {
+    background-color: #E82329;
+    color: white;
+    transition: 0.5s ease-in;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.fa-chevron-circle-right {
+    margin-top: 5px;
+}
+
+.fa-chevron-circle-right:hover {
+    color: #E82329;
+}
+
+.tombol-guru-karyawan:hover {
+    background-color: white;
+    color: red;
+    transition: 0.25s ease-in;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px);
+}
+
+.title-guru-karyawan {
+    border-bottom-width: 3px;
+    border-bottom-color: red;
+}
+
+.border-1 {
+    border-bottom: 2px #DB292F solid;
+}
+
+.judul-tengah {
+    font-size: 1.7rem;
+    margin: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-bottom: solid 5px#DB292F;
+    padding: 0 7px 6px;
+}
+
+.nama-pekerjaan {
+    position: relative;
+    top: 50px;
+}
+
+.profile-p {
+    background-color: grey;
+    width: 180px;
+    height: 240px;
+    border-radius: 50%;
+    align-items: stretch;
+    justify-content: center;
+    object-fit: cover;
+    margin-top: 10px;
+    border: 0.5px rgb(105, 102, 102) solid;
+}
+
+.tombol-guru-karyawan {
+    margin-top: 100px;
+    color: #fff;
+    background-color: #ce1c22;
+    border-color: #E82329;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/* guru dan karyawan */
+
+
+/* kata alumni */
+.kataalumni {
+    border-bottom-width: 3px;
+    border-bottom-color: red;
+}
+
+.border-1 {
+    border-bottom: 2px #DB292F solid;
+}
+
+.judul {
+    font-size: 1.7rem;
+    margin: auto;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    width: fit-content;
+    border-bottom: solid 5px#DB292F;
+    padding: 0 7px 6px;
+}
+
+.display {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    justify-items: center;
+}
+
+.testi {
+    background-color: #ce1c22;
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    justify-items: center;
+    display: grid;
+
+}
+
+.nama {
+    margin-top: 10px;
+    justify-content: center;
+    justify-items: center;
+    width: 220px;
+    height: 50px;
+}
+
+.nama img {
+    margin-top: 15px;
+    margin-left: 60px;
+    width: 100px;
+    height: 100px;
+    border-radius: 90PX;
+}
+
+.nama h3 {
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.nama h4 {
+    margin-top: 5px;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+
+.nama p {
+    margin-top: 12px;
+    text-align: justify;
+    font-size: 10px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+}
+
+/* kata alumni */
+
+/* Footer */
+a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+a:hover { color: #ffc400; } /* CSS link hover (green) */
+
+/* footer full of width */
+footer
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
