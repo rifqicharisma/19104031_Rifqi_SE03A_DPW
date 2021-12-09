@@ -1,4 +1,5 @@
 <?php
+    // menampilkan seluruh data
     include "koneksi.php";
     $kelas = ['SE-03-A', 'SE-03-B'];
     $sql = "SELECT * FROM data";
@@ -27,6 +28,7 @@
         <div class="row">
             <div class="col-lg-6 mb-5">
                 <h4>Input Data</h4>
+                <!-- disimpan ke dalam file simpan.php -->
                 <form action="simpan.php" method="post">
                     <div class="form-group">
                         <label for="nama">Nama</label>
@@ -36,6 +38,7 @@
                         <label for="kelas">Kelas</label>
                         <select name="kelas" class="form-control" required>
                             <option value="">Pilih</option>
+                            <!-- menu drop down kelas -->
                             <?php foreach ($kelas as $kl) : ?>
                                 <option value="<?= $kl; ?>"><?= $kl; ?></option>
                             <?php endforeach; ?>
@@ -73,6 +76,7 @@
                     </div>
                 </div>
 
+                <!-- menampilkan data yang ada di dalam mysql -->
                 <?php foreach ($data as $dt) : ?>
                     <div class="card mb-2">
                         <div class="card-body">
