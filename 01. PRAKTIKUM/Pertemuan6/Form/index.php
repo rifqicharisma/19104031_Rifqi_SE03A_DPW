@@ -1,6 +1,7 @@
 <?php
     // menampilkan seluruh data
     include "koneksi.php";
+    session_start();
     $kelas = ['SE-03-A', 'SE-03-B'];
     $sql = "SELECT * FROM data";
     $data = $conn->query($sql);
@@ -18,6 +19,23 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <script type="text/javascript">
+        // preview image function
+        function showPreview(event){
+            if(event.target.files.length > 0){
+                var src = URL.createObjectURL(event.target.files[0]);
+                var preview = document.getElementById("file-ip-1-preview");
+                preview.src = src;
+                preview.style.display = "block";
+            }
+        }
+    </script>
+    <style>
+        img {
+            width: 150px
+        }
+    </style>
+
     <title>CRUD PHP</title>
 </head>
 
@@ -29,6 +47,8 @@
         <div class="row">
             <div class="col-lg-6 mb-5">
                 <h4>Input Data</h4>
+                <!-- memanggil file read_message -->
+                <?php include "read_message.php" ?>
                 <!-- disimpan ke dalam file simpan.php -->
                 <form action="simpan.php" method="post">
                     <div class="form-group">
@@ -50,6 +70,18 @@
                         <label for="alamat">Alamat</label>
                         <input type="text" name="alamat" placeholder="Alamat" class="form-control" required>
                     </div>
+                    <!-- form input gambar -->
+                    <form action="simpan.php" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="exampleFormControlFile1">Masukkan Foto</label>
+                            <input type="file" name="foto" class="form-control-file" id="exampleFormControlFile1" accept="image/*" onchange="showPreview(event);" required>
+                            <br><br>
+                            <!-- preview image -->
+                            <div class="preview">
+                                <img id="file-ip-1-preview">
+                            </div>
+                        </div>
+                    </form>
 
                     <button type="submit" class="btn btn-primary btn-block">Submit</button>
                 </form>

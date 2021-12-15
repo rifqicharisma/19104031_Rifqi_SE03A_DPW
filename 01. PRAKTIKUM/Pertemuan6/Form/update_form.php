@@ -1,6 +1,7 @@
 <?php
     // menampilkan seluruh data
     include "koneksi.php";
+    session_start();
     $kelas = ['SE-03-A', 'SE-03-B'];
     $sql = "SELECT * FROM data";
     $data = $conn->query($sql);
@@ -33,6 +34,8 @@
         <div class="row">
             <div class="col-lg-6 mb-5">
                 <h4>Input Data</h4>
+                <!-- memanggil file read_message -->
+                <?php include "read_message.php" ?>
                 <!-- disimpan ke dalam file simpan.php -->
                 <form action="simpan.php" method="post">
 
@@ -59,6 +62,12 @@
                         
                         <input type="text" name="alamat" placeholder="Alamat" class="form-control" value="<?= $view['alamat'] ?>" required>
                     </div>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlFile1">Masukkan Foto</label>
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                    </form>
 
                     <!-- button edit : submit, kembali -->
                     <button type="submit" class="btn btn-success btn-block">Edit</button>
