@@ -7,11 +7,17 @@
     $nama = $_POST['nama'];
     $kelas = $_POST['kelas'];
     $alamat = $_POST['alamat'];
-    $foto = $_POST['foto'];
+    // $foto = $_POST['foto'];
+
+    // File upload path
+    // $targetDir = "uploads/";
+    // $fileName = basename($_FILES["file"]["name"]);
+    // $targetFilePath = $targetDir . $fileName;
+    // $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
 
     if(isset($_POST['mahasiswa_id'])) {
         $sql = "UPDATE data
-                SET nama='$nama', kelas='$kelas', alamat='$alamat', foto='$foto'
+                SET nama='$nama', kelas='$kelas', alamat='$alamat'
                 WHERE id=".$_POST['mahasiswa_id'];
         $edit = $conn->query($sql);
 
@@ -29,8 +35,9 @@
             exit();
         }
     } else {
-        $sql = "INSERT into data(nama, kelas, alamat, foto)
-                VALUES('$nama','$kelas','$alamat', $foto)";
+        move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath);
+        $sql = "INSERT into data(nama, kelas, alamat)
+                VALUES('$nama','$kelas','$alamat')";
         $add = $conn->query($sql);
         if($add) {
             $conn->close();

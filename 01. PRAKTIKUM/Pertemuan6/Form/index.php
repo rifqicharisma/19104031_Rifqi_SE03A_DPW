@@ -71,10 +71,10 @@
                         <input type="text" name="alamat" placeholder="Alamat" class="form-control" required>
                     </div>
                     <!-- form input gambar -->
-                    <form action="simpan.php" enctype="multipart/form-data">
+                    <form enctype="multipart/form-data">
                         <div class="form-group">
-                            <label for="exampleFormControlFile1">Masukkan Foto</label>
-                            <input type="file" name="foto" class="form-control-file" id="exampleFormControlFile1" accept="image/*" onchange="showPreview(event);" required>
+                            <label for="foto">Masukkan Foto</label>
+                            <input type="file" name="file" class="form-control-file" id="exampleFormControlFile1" accept="image/*" onchange="showPreview(event);" required>
                             <br><br>
                             <!-- preview image -->
                             <div class="preview">
