@@ -37,7 +37,7 @@
                 <!-- memanggil file read_message -->
                 <?php include "read_message.php" ?>
                 <!-- disimpan ke dalam file simpan.php -->
-                <form action="simpan.php" method="post">
+                <form action="simpan.php" method="post" enctype="multipart/form-data">
 
                     <input type="hidden" name="mahasiswa_id" value="<?= $view['id']; ?>">
 
@@ -62,12 +62,15 @@
                         
                         <input type="text" name="alamat" placeholder="Alamat" class="form-control" value="<?= $view['alamat'] ?>" required>
                     </div>
-                    <form>
-                        <div class="form-group">
-                            <label for="exampleFormControlFile1">Masukkan Foto</label>
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                        </div>
-                    </form>
+                    <div class="form-group">
+                            <label for="foto">Masukkan Foto</label>
+                            <input type="file" name="file" class="form-control-file" id="exampleFormControlFile1" accept="image/*" onchange="showPreview(event);" required>
+                            <br><br>
+                            <!-- preview image -->
+                            <div class="preview">
+                                <img id="file-ip-1-preview">
+                            </div>
+                    </div>
 
                     <!-- button edit : submit, kembali -->
                     <button type="submit" class="btn btn-success btn-block">Edit</button>
@@ -102,11 +105,15 @@
                     <div class="card mb-2">
                         <div class="card-body">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-4">
+                                    <img src="/uploads/<?php echo $dt['foto'] ?>" alt="" width="100%">
+                                </div>
+                                <div class="col-md-4">
 
                                     <h4><?= $dt['nama']; ?></h4>
+                                    <p><?= $dt['alamat']; ?></p>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <!-- menambahkan tombol hapus -->
                                     <a class="float-right ml-3 text-danger" href="hapus_data.php?mahasiswa_id=<?php echo $dt['id'] ?>" type="button" class="close">
                                         <span class="fa fa-trash"></span>
@@ -118,11 +125,6 @@
                                     </a>
 
                                     <p class="text-right"><?= $dt['kelas']; ?></p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p><?= $dt['alamat']; ?></p>
                                 </div>
                             </div>
                         </div>
