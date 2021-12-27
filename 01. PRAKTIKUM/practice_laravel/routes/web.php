@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\myController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// akses url beranda
+// diarahkan ke myController -> function index
+// Route::get('beranda', 'myController@index');
+// Route::get('/beranda', [myController::class, 'index']);
+
+// langsung ke view
+Route::view('/beranda', 'beranda');
