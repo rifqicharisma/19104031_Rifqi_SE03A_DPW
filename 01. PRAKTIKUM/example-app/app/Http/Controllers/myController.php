@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class myController extends Controller
 {
-    // mendefinisikan fungsi untuk view beranda
-    public function index(){
+    public function index()
+    {
         return view('beranda');
     }
 }
