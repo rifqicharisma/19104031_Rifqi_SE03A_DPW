@@ -11,3 +11,4 @@
 
 # Link Hosting Laravel
 - https://rifqipraktikum.barker-corp.my.id/
+- https://rifqipraktikum.barker-corp.my.id/mahasiswa
