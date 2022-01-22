@@ -8,3 +8,6 @@
 - Seluruh tugas teori dan praktikum ada pada repository ini
 - Tools : `Vs Code`
 - Extensions : `Auto Close Tag`, `Auto Rename Tag`, `JavaScript ES6`, `Live Server (auto refresh web page)`, `Thunder Client (API Test)`, `Visual Studio IntelliCode`, `vscode-icons`, `Path Intellisense`
+
+# Link Hosting Laravel
+- https://rifqipraktikum.barker-corp.my.id/
